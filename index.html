@@ -17,7 +17,7 @@
     function onDeviceReady() {
         // Update every 3 seconds
 		navigator.geolocation.watchPosition()
-        var options = { frequency: 3000 };
+        var options = { frequency: 1000 ,  enableHighAccuracy: true };
         watchID = navigator.geolocation.watchPosition(onSuccess, onError, options);
 		
 			 initialize();
